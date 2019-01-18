@@ -7,3 +7,10 @@
     font-size: 120px;
     color: green;
 }
+
+#buttons {
+    background-color: yellow;
+    border-color: black;
+    height: 90px;
+    width: 90px;
+}
