@@ -32,54 +32,54 @@
             <div class="text-center">
                 <fieldset class="form-group">
                     <div class="row">
-                        <label for="exampleFormControlInput1">The First Character To Die In The Deathly Hallows Part 1
+                        <label class="form-question" for="exampleFormControlInput1">The First Character To Die In The Deathly Hallows Part 1
                             was Dobby</label>
                     </div>
                     <div class="row">
                         <!-- Answer is False -->
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input1" type="radio" name="inlineRadioOptions1" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">True</label>
+                            <input class="form-check-input" type="radio" name="dobby" id="dobbytrue"
+                                value="dobby_true">
+                            <label class="form-check-label" for="dobbytrue">True</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input2" type="radio" name="inlineRadioOptions1" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">False</label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="form-group">
-                    <div class="row">
-                        <!-- Answer is True -->
-                        <label for="exampleFormControlInput1">Harry Potter's Middle Name is James</label>
-                    </div>
-                    <div class="row">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input3" type="radio" name="inlineRadioOptions2" id="inlineRadio3"
-                                value="option3">
-                            <label class="form-check-label" for="inlineRadio3">True</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input4" type="radio" name="inlineRadioOptions2" id="inlineRadio4"
-                                value="option4">
-                            <label class="form-check-label" for="inlineRadio4">False</label>
+                            <input class="form-check-input" type="radio" name="dobby" id="dobbyfalse"
+                                value="dobby_false">
+                            <label class="form-check-label" for="dobbyfalse">False</label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="form-group">
                     <div class="row">
                         <!-- Answer is True -->
-                        <label for="exampleFormControlInput1">Fred And George Gave Harry The Marauder's Map</label>
+                        <label class="form-question" for="exampleFormControlInput1">Harry Potter's Middle Name is James</label>
                     </div>
                     <div class="row">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input5" type="radio" name="inlineRadioOptions3" id="inlineRadio5"
+                            <input class="form-check-input" type="radio" name="middle" id="middletrue"
+                                value="middle_true">
+                            <label class="form-check-label" for="middletrue">True</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="middle" id="middlefalse"
+                                value="middle_false">
+                            <label class="form-check-label" for="middlefalse">False</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <!-- Answer is True -->
+                        <label class="form-question" for="exampleFormControlInput1">Fred And George Gave Harry The Marauder's Map</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio5"
                                 value="option5">
                             <label class="form-check-label" for="inlineRadio5">True</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input6" type="radio" name="inlineRadioOptions3" id="inlineRadio6"
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio6"
                                 value="option6">
                             <label class="form-check-label" for="inlineRadio6›">False</label>
                         </div>
@@ -88,16 +88,16 @@
                 <fieldset class="form-group">
                     <div class="row">
                         <!-- Answer is True -->
-                        <label for="exampleFormControlInput1">Bellatrix Lestrange is Draco's Aunt</label>
+                        <label class="form-question" for="exampleFormControlInput1">Bellatrix Lestrange is Draco's Aunt</label>
                     </div>
                     <div class="row">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input7" type="radio" name="inlineRadioOptions4" id="inlineRadio7"
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio7"
                                 value="option7">
                             <label class="form-check-label" for="inlineRadio7">True</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input8" type="radio" name="inlineRadioOptions4" id="inlineRadio8"
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio8"
                                 value="option8">
                             <label class="form-check-label" for="inlineRadio8">False</label>
                         </div>
@@ -114,7 +114,7 @@
         <!-- Correct, Wrong, Unanswered -->
         <div id="container">
             <div id="game-section" class="results">
-                <div>
+                <div id="wins-section">
                     <h3 class="section-title">Correct Answers</h3>
                     <div id="wins"></div>
                 </div>
@@ -122,9 +122,9 @@
                     <h3 class="section-title">Incorrect Answers</h3>
                     <div id="losses"></div>
                 </div>
-                <div id="losses-section">
+                <div id="unanswered-section">
                     <h3 class="section-title">Unanswered Questions</h3>
-                    <div id="losses"></div>
+                    <div id="unanswered"></div>
                 </div>
             </div>
         </div>
