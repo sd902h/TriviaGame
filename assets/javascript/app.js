@@ -16,7 +16,10 @@ function start() {
   if (!clockRunning) {
     intervalId = setInterval(count, 1000);
     clockRunning = true;
+    $("#buttons").empty();
+    $("#main-container").attr("class", "display");
   }
+  // document.getElementById("start").addEventListener("click", showHide);
 }
 
 function done() {
@@ -44,7 +47,7 @@ function count() {
 }
 
 function timeUp() {
-  $("#time-left").append("<h2>Time's Up!</h2>");
+  $("#time-left").append("<h2>All Done!</h2>");
 }
 
 function checkDobby() {
@@ -114,3 +117,14 @@ function checkBelatrix() {
     $("#unanswered").text(noAnswerCount);
   }
 }
+
+function checkStart() {
+
+}
+
+// $("button").on("click", showHide() {
+// function showHide() {
+//   document.getElementsByClassName("form-check-input").style.display = "block";
+//   document.getElementsByClassName("form-check-label").style.display = "block";
+//   document.getElementsByClassName("form-question").style.display = "block";
+// }

@@ -3,19 +3,33 @@
 }
 
 #display {
-    font-family: monospace;
+    font-family: garamond;
     font-size: 120px;
     color: green;
 }
 
-#buttons {
+button[type ="button"] {
     background-color: yellow;
     border-color: black;
+    color: black;
     height: 90px;
     width: 90px;
 }
 
- /* .form-check-input {
+.text-center {
+    font-family: garamond;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.display{
+    display: inline;
+}
+
+/* .form-check-input {
     display: none;
 }
 
