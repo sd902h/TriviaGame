@@ -34,6 +34,9 @@ function done() {
   checkMiddle();
   checkMap();
   checkBelatrix();
+  $("#wins").text(winCount);
+  $("#losses").text(lossCount);
+  $("#unanswered").text(noAnswerCount);
 }
 
 function count() {
@@ -49,6 +52,9 @@ function count() {
     checkMiddle();
     checkMap();
     checkBelatrix();
+    $("#wins").text(winCount);
+    $("#losses").text(lossCount);
+    $("#unanswered").text(noAnswerCount);
   }
   else {
     $("#display").text(time);
@@ -64,15 +70,12 @@ function checkDobby() {
   var dobbyFalse = document.getElementById("dobbyfalse").checked;
   if (dobbyFalse === true) {
     winCount++;
-    $("#wins").text(winCount);
   }
   else if (dobbyTrue === true) {
     lossCount++;
-    $("#losses").text(lossCount);
   }
   else {
     noAnswerCount++;
-    $("#unanswered").text(noAnswerCount);
   }
 }
 
@@ -81,15 +84,12 @@ function checkMiddle() {
   var middleFalse = document.getElementById("middlefalse").checked;
   if (middleTrue === true) {
     winCount++;
-    $("#wins").text(winCount);
   }
   else if (middleFalse === true) {
     lossCount++;
-    $("#losses").text(lossCount);
   }
   else {
     noAnswerCount++;
-    $("#unanswered").text(noAnswerCount);
   }
 }
 
@@ -98,15 +98,12 @@ function checkMap() {
   var mapFalse = document.getElementById("inlineRadio6").checked;
   if (mapTrue === true) {
     winCount++;
-    $("#wins").text(winCount);
   }
   else if (mapFalse === true) {
     lossCount++;
-    $("#losses").text(lossCount);
   }
   else {
     noAnswerCount++;
-    $("#unanswered").text(noAnswerCount);
   }
 }
 
@@ -115,14 +112,11 @@ function checkBelatrix() {
   var belaFalse = document.getElementById("inlineRadio8").checked;
   if (belaTrue === true) {
     winCount++;
-    $("#wins").text(winCount);
   }
   else if (belaFalse === true) {
     lossCount++;
-    $("#losses").text(lossCount);
   }
   else {
     noAnswerCount++;
-    $("#unanswered").text(noAnswerCount);
   }
 }

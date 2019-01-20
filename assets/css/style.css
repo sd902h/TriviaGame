@@ -1,9 +1,28 @@
+.title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: black;
+}
+
+#start_buttons {
+    padding-bottom: 40px;
+}
+
+#done_buttons {
+    padding-bottom: 40px;
+}
+
 .results {
+    padding-bottom: 40px;
+    font-size: 120px;
     text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    font-family: 'Quintessential', cursive;
 }
 
 #display {
-    font-family: garamond;
+    font-family: 'Ruslan Display', cursive;
+    font-family: 'Quintessential', cursive;
     font-size: 120px;
     color: green;
 }
@@ -17,7 +36,8 @@ button[type ="button"] {
 }
 
 .text-center {
-    font-family: garamond;
+    font-family: 'Ruslan Display', cursive;
+    font-family: 'Quintessential', cursive;
     font-weight: bold;
 }
 
@@ -26,5 +46,17 @@ button[type ="button"] {
 }
 
 .show_display{
-    display: inline;
+    text-align: center;
+    display: block;
+}
+
+.form-group {
+    margin-left: 30%;
+    display: block;
+    text-align: center;
+}
+
+.whole {
+    margin: 10%;
+    background: rgb(134, 26, 26);
 }
