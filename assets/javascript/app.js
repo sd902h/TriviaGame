@@ -16,13 +16,18 @@ function start() {
   if (!clockRunning) {
     intervalId = setInterval(count, 1000);
     clockRunning = true;
-    $("#buttons").empty();
-    $("#main-container").attr("class", "display");
+    $("#start_buttons").empty();
+    $("#main-container").attr("class", "show_display");
+    $("#display").attr("class", "show_display");
   }
-  // document.getElementById("start").addEventListener("click", showHide);
+
 }
 
 function done() {
+  $("#game_container").attr("class", "show_display")
+  $("#done_buttons").empty();
+  $("#main-container").attr("class", "hidden");
+  $("#display").attr("class", "hidden");
   clearInterval(intervalId);
   timeUp();
   checkDobby();
@@ -34,6 +39,10 @@ function done() {
 function count() {
   time--;
   if (time === 0) {
+    $("#game_container").attr("class", "show_display");
+    $("#done_buttons").empty();
+    $("#main-container").attr("class", "hidden");
+    $("#display").attr("class", "hidden");
     clearInterval(intervalId);
     timeUp();
     checkDobby();
@@ -53,11 +62,11 @@ function timeUp() {
 function checkDobby() {
   var dobbyTrue = document.getElementById("dobbytrue").checked;
   var dobbyFalse = document.getElementById("dobbyfalse").checked;
-  if (dobbyFalse == true) {
+  if (dobbyFalse === true) {
     winCount++;
     $("#wins").text(winCount);
   }
-  else if (dobbyTrue == true) {
+  else if (dobbyTrue === true) {
     lossCount++;
     $("#losses").text(lossCount);
   }
@@ -70,11 +79,11 @@ function checkDobby() {
 function checkMiddle() {
   var middleTrue = document.getElementById("middletrue").checked;
   var middleFalse = document.getElementById("middlefalse").checked;
-  if (middleTrue == true) {
+  if (middleTrue === true) {
     winCount++;
     $("#wins").text(winCount);
   }
-  else if (middleFalse == true) {
+  else if (middleFalse === true) {
     lossCount++;
     $("#losses").text(lossCount);
   }
@@ -87,11 +96,11 @@ function checkMiddle() {
 function checkMap() {
   var mapTrue = document.getElementById("inlineRadio5").checked;
   var mapFalse = document.getElementById("inlineRadio6").checked;
-  if (mapTrue == true) {
+  if (mapTrue === true) {
     winCount++;
     $("#wins").text(winCount);
   }
-  else if (mapFalse == true) {
+  else if (mapFalse === true) {
     lossCount++;
     $("#losses").text(lossCount);
   }
@@ -104,11 +113,11 @@ function checkMap() {
 function checkBelatrix() {
   var belaTrue = document.getElementById("inlineRadio7").checked;
   var belaFalse = document.getElementById("inlineRadio8").checked;
-  if (belaTrue == true) {
+  if (belaTrue === true) {
     winCount++;
     $("#wins").text(winCount);
   }
-  else if (belaFalse == true) {
+  else if (belaFalse === true) {
     lossCount++;
     $("#losses").text(lossCount);
   }
@@ -117,14 +126,3 @@ function checkBelatrix() {
     $("#unanswered").text(noAnswerCount);
   }
 }
-
-function checkStart() {
-
-}
-
-// $("button").on("click", showHide() {
-// function showHide() {
-//   document.getElementsByClassName("form-check-input").style.display = "block";
-//   document.getElementsByClassName("form-check-label").style.display = "block";
-//   document.getElementsByClassName("form-question").style.display = "block";
-// }

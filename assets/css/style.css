@@ -25,18 +25,6 @@ button[type ="button"] {
     display: none;
 }
 
-.display{
+.show_display{
     display: inline;
 }
-
-/* .form-check-input {
-    display: none;
-}
-
-.form-check-label {
-    display: none;
-}
-
-.form-question {
-    display: none;
-} */
